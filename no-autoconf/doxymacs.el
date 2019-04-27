@@ -7,7 +7,7 @@
 ;; Author: Ryan T. Sammartino <ryan.sammartino at gmail dot com>
 ;;      Kris Verbeeck <kris.verbeeck at advalvas dot be>
 ;; Created: 24/03/2001
-;; Version: @VERSION@
+;; Version: 1.8.0
 ;; Keywords: doxygen documentation
 ;;
 ;; This file is NOT part of GNU Emacs or XEmacs.
@@ -243,7 +243,7 @@
 (require 'url)
 (require 'tempo)
 
-(defconst doxymacs-version "@VERSION@"
+(defconst doxymacs-version "1.8.0"
   "Doxymacs version number")
 
 (defun doxymacs-version ()
@@ -283,7 +283,7 @@ file:///home/me/project/bar/doc/ and the XML tags file is at
   :group 'doxymacs)
 
 (defcustom doxymacs-doxygen-style
-  "@DOXYMACS_DEFAULT_STYLE@"
+  "JavaDoc"
   "The style of comments to insert into code.
 See http://www.stack.nl/~dimitri/doxygen/docblocks.html#docblocks for examples
 of the various styles.
@@ -305,7 +305,7 @@ must be one of \"@\" or \"\\\"."
   :group 'doxymacs)
 
 (defcustom doxymacs-use-external-xml-parser
-  @DOXYMACS_USE_EXTERNAL_XML_PARSER@
+  nil
   "*Use the external (written in C) XML parser or the internal (LISP) parser.
 For smallish tag files, you are better off with the internal parser.
 For larger tag files, you are better off with the external one.
@@ -315,7 +315,7 @@ Set to non-nil to use the external XML parser."
   :group 'doxymacs)
 
 (defcustom doxymacs-external-xml-parser-executable
-  "@DOXYMACS_PARSER@"
+  ""
   "*Where the external XML parser executable is."
   :type 'string
   :group 'doxymacs)

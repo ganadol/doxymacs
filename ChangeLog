@@ -1,22 +1,3 @@
-2010-03-07  Ryan T. Sammartino  <ryan.sammartino@gmail.com>
-
-	* lisp/doxymacs.el.in: Feature #1569376: Insert doxygen commands
-	interactively:
-	(doxymacs-insert-command-history, doxymacs-commands,
-	doxymacs-insert-command, doxymacs-read-arg): New variables and
-	functions for feature #1569376.
-
-2010-02-19  Ryan T. Sammartino  <ryan.sammartino@gmail.com>
-
-	* lisp/doxymacs.el.in: Patch #2954452: New C++! documentation
-	style (thanks Robert Jørgensgaard Engdahl).
-	(doxymacs-JavaDoc-function-comment-template): Bug #1862867: Remove
-	unnecessary tailing whitespace.
-
-2010-02-18  Ryan T. Sammartino  <ryan.sammartino@gmail.com>
-
-	* lisp/doxymacs.el.in: support new tparam doxygen command.
-
 2007-06-10  Ryan T. Sammartino  <ryan.sammartino@gmail.com> (1.8.0)
 	* NEWS, configure.ac: prepare for new version release.
 	* lisp/doxymacs.el.in: documentation update.
@@ -24,7 +5,7 @@
 
 2007-02-02  Ryan T. Sammartino <ryan.sammartino@gmail.com>
 	* lisp/doxymacs.el.in:
-	(doxymacs-mode, doxymacs-doxygan-keywords): Bug #1490021:
+	(doxymacs-mode, doxymacs-doxygan-keywords): Bug #1490021: 
 	Allow spaces in @param [in] style documentation.
 	(doxymacs-user-mail-address): Bug #1496399:
 	New function.
@@ -38,7 +19,7 @@
 	* doxymacs_parser.c:
 	Bug #1459026: Fix compile warning with gcc 4.0.
 	* lisp/doxymacs.el.in: minor documentation updates.
-	(doxymacs-mode): Feature #1338245: Add tokens to filladapt
+	(doxymacs-mode): Feature #1338245: Add tokens to filladapt 
 	to match doxygen markup.
 	* example/doc/*: Update to use doxygen 1.4.4 output.
 	* NEWS, README, configure.ac: prepare for new version release.
